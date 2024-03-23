@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <nav>
@@ -106,10 +110,10 @@
       <div class="booking">
         <h2>Boek ons</h2>
         <form action="" id="contact-form">
-          <input type="text" placeholder="Naam" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Onderwerp" />
-          <textarea placeholder="Bericht" rows="5" cols="33"> </textarea>
+          <input type="text" placeholder="Naam" id="form-name" required />
+          <input type="email" placeholder="Email" id="email" required />
+          <textarea placeholder="" rows="5" cols="33" id="messages" required>
+          </textarea>
           <button>Verstuur</button>
         </form>
       </div>
